@@ -27,6 +27,7 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  z-index: 10;
 }
 
 header nav {
@@ -92,12 +93,24 @@ main .left-side .hero-logo {
 }
 
 main .left-side .hero-logo img {
-  height: 23rem;
+  height: 50vh;
+  width: auto;
 }
 
 main .left-side .hero-text {
   color: #93C2DB;
   padding: 3rem;
   text-align: justify;
+}
+
+main .right-side .wrapper {
+  padding: 4rem;
+}
+
+main .right-side .wrapper .box {
+  color: #072540;
+  background-color: #FC88DE;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

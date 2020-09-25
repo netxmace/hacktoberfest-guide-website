@@ -25,6 +25,7 @@ header {
     background: linear-gradient(180deg, #FC88DE 0%, #D06AA8 100%), #D06AA8;
     align-items: center;
     justify-content: space-around;
+    z-index: 10;
     nav {
         flex-basis: 30%;
         ul {
@@ -59,13 +60,26 @@ main {
         .hero-logo {
             padding: 3rem 2rem 1rem 2rem;
             img {
-                height: 23rem;
+                // height: 23rem;
+                height: 50vh;
+                width: auto;
             }
         }
         .hero-text {
             color: $light-blue;
             padding: 3rem;
             text-align: justify;
+        }
+    }
+    .right-side {
+        .wrapper {
+            padding: 4rem;
+            .box {
+                color: $dark-blue;
+                background-color: $light-pink;
+                margin: 2rem auto;
+                padding: 1rem;
+            }
         }
     }
 }
