@@ -19,9 +19,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FC88DE), to(#D06AA8)), #D06AA8;
-  background: linear-gradient(180deg, #FC88DE 0%, #D06AA8 100%), #D06AA8;
+  height: 4.5rem;
+  background-color: #93C2DB;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -58,7 +57,7 @@ header nav ul li:hover {
 
 main {
   padding: 3rem;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 4.5rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,14 +102,53 @@ main .left-side .hero-text {
   text-align: justify;
 }
 
+main .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 main .right-side .wrapper {
   padding: 4rem;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .right-side .wrapper .box {
+  border-radius: 2px;
   color: #072540;
-  background-color: #FC88DE;
-  margin: 2rem auto;
+  background-color: #93C2DB;
+  margin: 2rem auto 0rem auto;
   padding: 1rem;
+}
+
+main .right-side .wrapper .box p {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+main .right-side .wrapper .box .inner-box {
+  background-color: #072540;
+  padding: 1rem;
+  color: #93C2DB;
+}
+
+main .right-side .wrapper .what {
+  margin-top: 0rem;
 }
 /*# sourceMappingURL=style.css.map */
