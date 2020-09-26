@@ -25,7 +25,9 @@ header {
     position: sticky;
     top: 0;
     // background: linear-gradient(180deg, #FC88DE 0%, #D06AA8 100%), #D06AA8;
-    background-color: $light-blue;
+    // background-color: $light-blue;
+    background: rgb(147, 194, 219);
+    background: linear-gradient(180deg, rgba(147, 194, 219, 1) 88%, rgba(252, 136, 222, 1) 100%);
     align-items: center;
     justify-content: space-around;
     z-index: 100;

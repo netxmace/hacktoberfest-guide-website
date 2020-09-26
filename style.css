@@ -22,7 +22,9 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #93c2db;
+  background: #93c2db;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(88%, #93c2db), to(#fc88de));
+  background: linear-gradient(180deg, #93c2db 88%, #fc88de 100%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
