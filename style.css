@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #072540;
 }
 
@@ -20,13 +20,16 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: 4.5rem;
-  background-color: #93C2DB;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #93c2db;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 10;
+  z-index: 100;
 }
 
 header nav {
@@ -52,7 +55,7 @@ header nav ul li a {
 }
 
 header nav ul li:hover {
-  color: #D06AA8;
+  color: #d06aa8;
 }
 
 main {
@@ -97,7 +100,7 @@ main .left-side .hero-logo img {
 }
 
 main .left-side .hero-text {
-  color: #93C2DB;
+  color: #93c2db;
   padding: 3rem;
   text-align: justify;
 }
@@ -132,7 +135,7 @@ main .right-side .wrapper {
 main .right-side .wrapper .box {
   border-radius: 2px;
   color: #072540;
-  background-color: #93C2DB;
+  background-color: #93c2db;
   margin: 2rem auto 0rem auto;
   padding: 1rem;
 }
@@ -145,14 +148,14 @@ main .right-side .wrapper .box p {
 main .right-side .wrapper .box .inner-box {
   background-color: #072540;
   padding: 1rem;
-  color: #93C2DB;
+  color: #93c2db;
 }
 
 main .right-side .wrapper .what {
   margin-top: 0rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   header nav {
     display: none;
   }

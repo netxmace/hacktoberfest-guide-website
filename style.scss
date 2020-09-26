@@ -1,7 +1,7 @@
 $dark-blue: #072540;
-$light-blue: #93C2DB;
-$light-pink: #FC88DE;
-$dark-pink: #D06AA8;
+$light-blue: #93c2db;
+$light-pink: #fc88de;
+$dark-pink: #d06aa8;
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ $dark-pink: #D06AA8;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: $dark-blue;
 }
 
@@ -22,11 +22,13 @@ a {
 header {
     display: flex;
     height: 4.5rem;
+    position: sticky;
+    top: 0;
     // background: linear-gradient(180deg, #FC88DE 0%, #D06AA8 100%), #D06AA8;
     background-color: $light-blue;
     align-items: center;
     justify-content: space-around;
-    z-index: 10;
+    z-index: 100;
     nav {
         flex-basis: 30%;
         ul {
@@ -105,7 +107,7 @@ main {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1100px) {
     header {
         nav {
             display: none;
