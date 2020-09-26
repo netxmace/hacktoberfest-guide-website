@@ -48,7 +48,7 @@ header {
 
 main {
     padding: 3rem;
-    height: calc(100vh - 4.5rem);
+    min-height: calc(100vh - 4.5rem);
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -62,8 +62,8 @@ main {
             padding: 3rem 2rem 1rem 2rem;
             img {
                 // height: 23rem;
-                height: 50vh;
-                width: auto;
+                height: auto;
+                width: 35vw;
             }
         }
         .hero-text {
@@ -100,6 +100,37 @@ main {
             }
             .what {
                 margin-top: 0rem;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    header {
+        nav {
+            display: none;
+        }
+    }
+    main {
+        padding: 2rem;
+        flex-direction: column;
+        .left-side {
+            .hero-logo {
+                padding: 1rem 1rem 1rem 1rem;
+                img {
+                    width: 70vw;
+                    height: auto;
+                }
+            }
+            .hero-text {
+                padding: 0.3rem;
+            }
+        }
+        .right-side {
+            justify-content: stretch;
+            .wrapper {
+                width: 100%;
+                padding: 0.2rem;
             }
         }
     }
