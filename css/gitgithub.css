@@ -1,0 +1,55 @@
+main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+main h1 {
+  text-align: center;
+  color: #fc88de;
+}
+
+main .block {
+  margin: 3rem;
+}
+
+main .block__heading {
+  color: white;
+}
+
+main .block__paragraph {
+  padding: 1rem 0;
+  color: #93c2db;
+  text-align: start;
+}
+
+main .block .link {
+  padding: 0.5rem 0;
+  display: block;
+  color: #9C4668;
+}
+
+main .block .link:hover {
+  color: #fc88de;
+}
+
+main .block pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(147, 197, 219, 0.07);
+  color: #93c2db;
+}
+
+main .block pre code {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=gitgithub.css.map */

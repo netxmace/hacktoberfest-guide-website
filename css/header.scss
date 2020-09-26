@@ -1,0 +1,38 @@
+// Header
+$dark-blue: #072540;
+$light-blue: #93c2db;
+$light-pink: #fc88de;
+$dark-pink: #d06aa8;
+header {
+    display: flex;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    // background: linear-gradient(180deg, #FC88DE 0%, #D06AA8 100%), #D06AA8;
+    // background-color: $light-blue;
+    background: rgb(147, 194, 219);
+    background: linear-gradient(180deg, rgba(147, 194, 219, 1) 88%, rgba(252, 136, 222, 1) 100%);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+    nav {
+        flex-basis: 30%;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            li {
+                a {
+                    color: inherit;
+                    font-weight: 700;
+                }
+                &:hover {
+                    color: $dark-pink;
+                }
+            }
+        }
+    }
+}
+
+//css for navbar
