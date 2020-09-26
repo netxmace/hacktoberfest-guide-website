@@ -15,6 +15,11 @@ header {
     align-items: center;
     justify-content: space-around;
     z-index: 100;
+    .header-logo {
+        a {
+            color: $dark-blue;
+        }
+    }
     nav {
         flex-basis: 30%;
         ul {

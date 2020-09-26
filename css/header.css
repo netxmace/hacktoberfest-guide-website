@@ -17,6 +17,10 @@ header {
   z-index: 100;
 }
 
+header .header-logo a {
+  color: #072540;
+}
+
 header nav {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
