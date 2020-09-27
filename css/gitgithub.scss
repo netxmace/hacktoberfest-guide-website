@@ -29,6 +29,7 @@ main {
             }
         }
         pre {
+            overflow-x: scroll;
             padding: 1rem;
             margin: 1rem 0;
             //color is $light-blue
@@ -38,6 +39,10 @@ main {
             code {
                 width: 100%;
             }
+        }
+        .inline-code {
+            padding: 0.3rem;
+            background-color: rgba(147, 197, 219, 0.07);
         }
     }
 }
