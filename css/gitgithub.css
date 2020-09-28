@@ -55,9 +55,6 @@ main .block img {
 }
 
 @media (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
   main {
     width: 100%;
   }
