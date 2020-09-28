@@ -60,6 +60,14 @@ header nav ul li:hover {
   color: #d06aa8;
 }
 
+header nav ul .current-page {
+  color: #d06aa8;
+}
+
+header nav ul .home-link {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   header .header-logo {
     visibility: hidden;
@@ -94,6 +102,9 @@ header nav ul li:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  header nav ul .home-link {
+    display: block;
   }
   header nav li {
     padding: 2rem 0;

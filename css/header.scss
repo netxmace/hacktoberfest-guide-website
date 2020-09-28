@@ -45,6 +45,12 @@ header {
                     color: $dark-pink;
                 }
             }
+            .current-page {
+                color: $dark-pink;
+            }
+            .home-link {
+                display: none;
+            }
         }
     }
 }
@@ -81,6 +87,9 @@ header {
                 color: white;
                 flex-direction: column;
                 justify-content: center;
+                .home-link {
+                    display: block;
+                }
             }
             li {
                 padding: 2rem 0;
