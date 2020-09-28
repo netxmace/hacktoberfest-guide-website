@@ -22,6 +22,14 @@ header .header-logo a {
 }
 
 header .fa {
+  padding: 0.5rem;
+}
+
+header .fa-bars {
+  display: none;
+}
+
+header .hide-close {
   display: none;
 }
 
@@ -53,19 +61,28 @@ header nav ul li:hover {
 }
 
 @media (max-width: 1024px) {
-  header .fa {
-    display: inline-block;
-    width: 100%;
-    margin-left: auto;
+  header .header-logo {
+    visibility: hidden;
   }
-  header .fa::before {
-    margin-left: auto;
-    display: inline-block;
+  header .fa-bars {
+    display: block;
   }
-  header nav ul {
-    position: absolute;
+  header .hide-bars {
+    display: none;
+  }
+  header nav {
+    position: fixed;
     top: 4.5rem;
     left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header nav ul {
+    top: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background-color: #072540;
@@ -77,13 +94,11 @@ header nav ul li:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
-  header nav ul li {
+  header nav li {
     padding: 2rem 0;
   }
-  header nav .show {
+  header .show {
     left: 0;
   }
 }

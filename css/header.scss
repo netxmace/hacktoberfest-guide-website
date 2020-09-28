@@ -21,6 +21,12 @@ header {
         }
     }
     .fa {
+        padding: 0.5rem;
+    }
+    .fa-bars {
+        display: none;
+    }
+    .hide-close {
         display: none;
     }
     nav {
@@ -46,34 +52,42 @@ header {
 //css for navbar
 @media(max-width: 1024px) {
     header {
-        .fa {
-            display: inline-block;
-            width: 100%;
-            margin-left: auto;
-            &::before {
-                margin-left: auto;
-                display: inline-block;
-            }
+        .header-logo {
+            visibility: hidden;
         }
+        .fa-bars {
+            display: block;
+        }
+        .hide-bars {
+            display: none;
+        }
+        // .hide-close {
+        //     display: none;
+        // }
         nav {
+            position: fixed;
+            top: 4.5rem;
+            left: -100%;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
             ul {
-                position: absolute;
-                top: 4.5rem;
-                left: -100%;
+                top: 0;
+                bottom: 0;
                 width: 100%;
                 height: 100%;
                 background-color: $dark-blue;
                 color: white;
                 flex-direction: column;
                 justify-content: center;
-                transition: all 0.5s;
-                li {
-                    padding: 2rem 0;
-                }
             }
-            .show {
-                left: 0;
+            li {
+                padding: 2rem 0;
             }
+        }
+        .show {
+            left: 0;
         }
     }
 }
