@@ -51,7 +51,7 @@ a {
 //     }
 // }
 main {
-    padding: 3rem;
+    padding: 0.1rem 3rem;
     min-height: calc(100vh - 4.5rem);
     display: flex;
     flex-direction: row;
@@ -61,19 +61,22 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         .hero-logo {
-            padding: 3rem 2rem 1rem 2rem;
+            padding: 1rem 2rem 2rem 2rem;
             img {
                 // height: 23rem;
                 height: auto;
-                width: 35vw;
+                width: 30vw;
             }
         }
         .hero-text {
             color: $light-blue;
-            padding: 3rem;
+            padding: 0rem;
             text-align: justify;
+            .link {
+                color: $light-pink;
+            }
         }
     }
     .right-side {
@@ -97,6 +100,7 @@ main {
                     padding-bottom: 0.5rem;
                 }
                 .inner-box {
+                    font-size: 0.9rem;
                     background-color: $dark-blue;
                     padding: 1rem;
                     color: $light-blue;
