@@ -31,10 +31,14 @@
         <div class="block">
             <h3 class="block__heading">What is git?</h3>
             <p class="block__paragraph">
-                Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing
-                changes by multiple people to all be merged into one source. So regardless of whether you write code that only you will see, or work as part of a team, Git will be useful for you. <br><br>
-                Git is software that runs locally. Your files and their history are stored on your computer. Online hosts (such as GitHub) can be used to store a copy of the files and their revision history on remote. Having a centrally located place where you can upload your changes and download changes from
-                others, enable you to collaborate more easily with other developers. Git can automatically merge the changes, so two people can even work on different parts of the same file and later merge those changes without losing each other’s work!
+                <div class="block__paragraph">
+                    Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing
+                    changes by multiple people to all be merged into one source. So regardless of whether you write code that only you will see, or work as part of a team, Git will be useful for you.
+                </div>
+                <div class="block__paragraph">
+                    Git is software that runs locally. Your files and their history are stored on your computer. Online hosts (such as GitHub) can be used to store a copy of the files and their revision history on remote. Having a centrally located place where you can upload your changes and download changes from
+                    others, enable you to collaborate more easily with other developers. Git can automatically merge the changes, so two people can even work on different parts of the same file and later merge those changes without losing each other’s work!
+                </div>
             </p>
         </div>
         <div class="block">
@@ -56,6 +60,15 @@
             <div class="block__paragraph">
                 If you've cloned the repo from github, then you don't need to do <code class="inline-code">  git init</code>
             </div>
+            <div class="Image">
+                <img src="images/bash_cmds_init.png" alt="bash command screenshot">
+            </div>
+            <div class="block__paragraph">
+                You can use <code class="inline-code">  git status</code> to display the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+            </div>
+            <div class="Image">
+                <img src="images/bash_cmds_git_status.png" alt="bash command screenshot">
+            </div>
         </div>
         <div class="block">
             <h3 class="block__heading">Staging</h3>
@@ -69,6 +82,9 @@
             </div>
             <div class="block__paragraph">You can use "." in place of 'noobprogram.py' to stage all the files in the repo : </div>
             <pre><code>~ git add .</code></pre>
+            <div class="Image">
+                <img src="images/bash_cmds_git_add.png" alt="bash command screenshot">
+            </div>
         </div>
         <div class="block">
             <h3 class="block__heading">Commiting</h3>
@@ -79,12 +95,21 @@
             <div class="block__paragraph">
                 The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo.
             </div>
+            <div class="Image">
+                <img src="images/bash_cmds_git_commit.png" alt="bash command screenshot">
+            </div>
         </div>
         <div class="block">
             <h3 class="block__heading">Pushing</h3>
             <p class="block__paragraph">
                 Now all our code in the local repo is commited. All we have to do now is to push the code to github, i.e your remote repo.
             </p>
+            <p class="block__paragraph">
+                If you want to create a new remote repo, log in on <a href="https://github.com/" target="_blank"> Github </a> and create one without initializing README file.
+            </p>
+            <div class="Image">
+                <img src="images/github_create_newRepo.png" alt="github create new repo">
+            </div>
             <p class="block__paragraph">
                 So we need to specify where we need to push our code to, i.e to which repo we need to push the code to. (Again, you don't have to do the below step if you cloned the repo).
             </p>
@@ -94,12 +119,24 @@
                 <br> <code class="inline-code">origin</code> is an alias we give to the <code class="inline-code">repo_url</code>
             </div>
             <div class="block__paragraph">
-                Go to the github repo you want to push to. <br> Click on the Green Button 'Code'. <br> Now click on HTTPS and copy the url.
+                If you just created a repo without initializing README file, your page will look like as shown below. Click on HTTPS and copy the url.But if you are using an already existing repo, go to it's github page, and click the Green Button 'Code'. Now click on HTTPS and copy the url.
+            </div>
+            <div class="Image">
+                <img src="images/github_ini_repo.png" alt="github create new repo">
             </div>
             <div class="block__paragraph">
                 After you've added the remote, do the following command to push the code to the master branch of your github repo.
             </div>
             <pre><code>~ git push origin master</code></pre>
+            <div class="Image">
+                <img src="images/bash_cmds_git_push.png" alt="bash command screenshot">
+            </div>
+            <div class="block__paragraph">
+                Go to the github repo page and refresh.You'll see that it has been updated.
+            </div>
+            <div class="Image">
+                <img src="images/github_pushedRepo.png" alt="bash command screenshot">
+            </div>
         </div>
     </main>
 
