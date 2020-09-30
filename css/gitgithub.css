@@ -26,10 +26,18 @@ main .block__paragraph {
 main .block .link {
   padding: 0.5rem 0;
   display: block;
-  color: #9C4668;
+  color: #9c4668;
 }
 
 main .block .link:hover {
+  color: #fc88de;
+}
+
+main .block .inline-link {
+  color: #9c4668;
+}
+
+main .block .inline-link:hover {
   color: #fc88de;
 }
 
@@ -54,11 +62,31 @@ main .block img {
   height: auto;
 }
 
+main .block ul {
+  padding: 1rem;
+}
+
+main .block ul li {
+  color: #93c2db;
+  padding: 0.5rem 0;
+}
+
+main .block .image {
+  width: 100%;
+}
+
+main .block .image img {
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   main {
     width: 100%;
   }
   main .block pre {
+    overflow-x: scroll;
+  }
+  main .block .image {
     overflow-x: scroll;
   }
 }

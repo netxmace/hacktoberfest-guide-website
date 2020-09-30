@@ -23,7 +23,13 @@ main {
         .link {
             padding: 0.5rem 0;
             display: block;
-            color: #9C4668;
+            color: #9c4668;
+            &:hover {
+                color: $light-pink;
+            }
+        }
+        .inline-link {
+            color: #9c4668;
             &:hover {
                 color: $light-pink;
             }
@@ -47,14 +53,30 @@ main {
             width: 40vw;
             height: auto;
         }
+        ul {
+            padding: 1rem;
+            li {
+                color: $light-blue;
+                padding: 0.5rem 0;
+            }
+        }
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
     main {
         width: 100%;
         .block {
             pre {
+                overflow-x: scroll;
+            }
+            .image {
                 overflow-x: scroll;
             }
         }
