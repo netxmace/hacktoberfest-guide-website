@@ -79,6 +79,28 @@ main .block .image img {
   width: 100%;
 }
 
+footer {
+  opacity: .6;
+}
+
+footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #93c2db;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #fc88de;
+}
+
 @media (max-width: 1024px) {
   main {
     width: 100%;

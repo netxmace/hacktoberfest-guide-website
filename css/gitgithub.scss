@@ -69,6 +69,20 @@ main {
     }
 }
 
+footer {
+    opacity: .6;
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light-blue;
+        letter-spacing: 1px;
+    }
+    a {
+        color: $light-pink;
+    }
+}
+
 @media (max-width: 1024px) {
     main {
         width: 100%;
