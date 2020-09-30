@@ -17,6 +17,10 @@ header {
   z-index: 100;
 }
 
+header .header-logo .current-page {
+  color: #d06aa8;
+}
+
 header .header-logo a {
   color: #072540;
 }

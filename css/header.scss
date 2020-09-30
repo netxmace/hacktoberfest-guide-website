@@ -16,6 +16,9 @@ header {
     justify-content: space-around;
     z-index: 100;
     .header-logo {
+        .current-page {
+            color: $dark-pink;
+        }
         a {
             color: $dark-blue;
         }
